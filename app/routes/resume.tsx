@@ -13,7 +13,6 @@ export const meta = () => {
     ]
 }
 
-
 const Resume = () => {
 
     const { auth, isLoading, fs, kv } = usePuterStore();
@@ -99,7 +98,6 @@ const Resume = () => {
                                 <Summary feedback={feedback}/>
                                 <ATS score={feedback.ATS.score || 0 } suggestions={feedback.ATS.tips || []} />
                                 <Details feedback={feedback} />
-
                             </div>
                         ):
                         (
